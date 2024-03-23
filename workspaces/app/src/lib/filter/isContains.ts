@@ -10,6 +10,11 @@ type Params = {
 
 // ひらがな・カタカナ・半角・全角を区別せずに文字列が含まれているかを調べる
 export function isContains({ query, target }: Params): boolean {
+  // まずは素直にtargetにqueryが含まれているかを調べる
+  if (target.includes(query)) {
+    return true;
+  }
+
   // target の先頭から順に query が含まれているかを調べる
   TARGET_LOOP: for (let offset = 0; offset <= target.length - query.length; offset++) {
     for (let idx = 0; idx < query.length; idx++) {
