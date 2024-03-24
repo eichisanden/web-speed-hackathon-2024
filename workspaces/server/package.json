@@ -52,5 +52,8 @@
     "drizzle-kit": "0.20.9",
     "pkg-dir": "5.0.0",
     "tsup": "8.0.1"
-  }
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ]
 }

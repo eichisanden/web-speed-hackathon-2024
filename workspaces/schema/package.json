@@ -5,5 +5,8 @@
     "drizzle-orm": "0.29.3",
     "drizzle-zod": "0.5.1",
     "zod": "3.22.4"
-  }
+  },
+  "browserslist": [
+    "last 1 chrome version"
+  ]
 }
